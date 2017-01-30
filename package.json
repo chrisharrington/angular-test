@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-seed",
+  "name": "angular-test",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -9,19 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrisharrington/react-webpack-seed.git"
+    "url": "https://github.com/chrisharrington/angular-test.git"
   },
   "author": "Chris Harrington",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrisharrington/react-webpack-seed/issues"
+    "url": "https://github.com/chrisharrington/angular-test/issues"
   },
-  "homepage": "https://github.com/chrisharrington/react-webpack-seed",
+  "homepage": "https://github.com/chrisharrington/angular-test",
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
     "clean-webpack-plugin": "^0.1.9",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
@@ -40,7 +39,6 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "angular": "^1.6.1"
   }
 }
