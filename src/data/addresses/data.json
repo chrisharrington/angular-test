@@ -1,0 +1,61 @@
+[{
+	"id": 1,
+	"firstName": "Aaron",
+	"lastName": "Fuller",
+	"latitude": "56.77513",
+	"longitude": "51.93098"
+}, {
+	"id": 2,
+	"firstName": "Ronald",
+	"lastName": "Boyd",
+	"latitude": "56.34751",
+	"longitude": "25.55514"
+}, {
+	"id": 3,
+	"firstName": "Annie",
+	"lastName": "Garcia",
+	"latitude": "65.38333",
+	"longitude": "26.91667"
+}, {
+	"id": 4,
+	"firstName": "William",
+	"lastName": "Fields",
+	"latitude": "32.1714",
+	"longitude": "35.09767"
+}, {
+	"id": 5,
+	"firstName": "Phyllis",
+	"lastName": "Hill",
+	"latitude": "50.8466",
+	"longitude": "4.3528"
+}, {
+	"id": 6,
+	"firstName": "Randy",
+	"lastName": "Burke",
+	"latitude": "49.00687",
+	"longitude": "31.39471"
+}, {
+	"id": 7,
+	"firstName": "Larry",
+	"lastName": "Wheeler",
+	"latitude": "40.42639",
+	"longitude": "49.98361"
+}, {
+	"id": 8,
+	"firstName": "William",
+	"lastName": "Smith",
+	"latitude": "38.6667",
+	"longitude": "-9.0667"
+}, {
+	"id": 9,
+	"firstName": "Rachel",
+	"lastName": "Moore",
+	"latitude": "48.4369",
+	"longitude": "1.4636"
+}, {
+	"id": 10,
+	"firstName": "Ruby",
+	"lastName": "Henry",
+	"latitude": "31.95069",
+	"longitude": "35.46756"
+}]

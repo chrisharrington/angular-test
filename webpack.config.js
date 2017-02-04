@@ -8,7 +8,7 @@ var path = require("path"),
     WebpackBuildNotifier = require('webpack-build-notifier');
 
 module.exports = {
-    entry: "./src/index.jsx",
+    entry: "./src/index.js",
     output: {
         path: "dist",
         filename: "bundle.js"
@@ -22,8 +22,9 @@ module.exports = {
             { test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file?name=/images/[hash].[ext]']},
             { test: /\.htc$/i, loader: "file?name=assets/[hash].[ext]" },
             { test: /\.css$/i, loader: "style!css" },
-            { test: /\.(js|jsx)$/i, loader: "babel-loader", query: { presets: ["es2015", "react"] }},
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader") }
+            { test: /\.(js|jsx)$/i, loader: "babel-loader" },
+            { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader") },
+            { test: /\.ng.html$/, loader: 'ngtemplate!html' }
         ]
     },
     devtool: 'cheap-module-inline-source-map',
@@ -31,13 +32,19 @@ module.exports = {
         root: [path.resolve("./node_modules"), path.join(__dirname, "./src")],
         extensions: ['', '.js', '.jsx']
     },
+    resolveLoader: {
+        root: path.join(__dirname, 'node_modules')
+    },
     plugins: [
         new LiveReloadPlugin(),
         new ExtractTextPlugin("bundle.css"),
         new CleanWebpackPlugin(["dist"]),
         new WebpackBuildNotifier({
-            title: 'Hooked with an Edge',
+            title: 'Angular Test',
             successSound: false
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: './src/index.html' }
+        ])
     ]
 };

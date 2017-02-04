@@ -1,0 +1,7 @@
+<div class="list content" ng-class="{ hidden: shown !== 'list' }">
+	<div ng-repeat="address in addresses">
+		<span class="name">{{address.firstName}} {{address.lastName}}</span>
+		<span class="location">{{ address.latitude }} / {{ address.longitude }}</span>
+		<div class="clearfix"></div>
+	</div>
+</div>

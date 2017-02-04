@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "setup": "npm install webpack-dev-server -g && npm install",
+    "setup": "npm install webpack -g && npm install webpack-dev-server -g && npm install",
     "start": "webpack-dev-server --inline --hot --open"
   },
   "repository": {
@@ -17,10 +17,15 @@
     "url": "https://github.com/chrisharrington/angular-test/issues"
   },
   "homepage": "https://github.com/chrisharrington/angular-test",
+  "babel": {
+    "presets": [
+      "babel-preset-es2015"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015": "^6.22.0",
     "clean-webpack-plugin": "^0.1.9",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
@@ -28,6 +33,8 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.3",
+    "json-loader": "^0.5.4",
+    "ngtemplate-loader": "^1.3.1",
     "node-sass": "^3.8.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
@@ -39,6 +46,7 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
-    "angular": "^1.6.1"
+    "angular": "^1.6.1",
+    "leaflet": "^1.0.3"
   }
 }
