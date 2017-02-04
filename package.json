@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "setup": "npm install webpack -g && npm install webpack-dev-server -g && npm install",
+    "setup": "npm install webpack@1.14.0 -g && npm install webpack-dev-server@1.16.3 -g && npm install",
     "start": "webpack-dev-server --inline --hot --open"
   },
   "repository": {
